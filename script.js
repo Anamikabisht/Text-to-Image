@@ -1,4 +1,4 @@
-const token = "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"; // Replace with your actual Hugging Face API token
+const token = "yourToken"; // Replace with your actual Hugging Face API token
 const inputText = document.getElementById("input");
 const image = document.getElementById("image");
 const button = document.getElementById("btn");
@@ -19,7 +19,7 @@ async function query() {
             throw new Error("Failed to fetch image from API");
         }
 
-        const result = await response.blob(); // Convert the response to a blob
+        const result = await response.blob(); 
         return result;
     } catch (error) {
         console.error("Error:", error);
